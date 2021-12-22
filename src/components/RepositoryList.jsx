@@ -1,17 +1,21 @@
-function RepositoryList() {
-    return(
-        <section>
-            <h1>Lista de Repositórios</h1>
+import { ReposityItem } from "./RepositoryItem";
 
-            <ul>
-                <li>
-                    <h3>Github</h3>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>
-    )
+const repository = {
+  name: "Unform",
+  description: "Forms in React",
+  link: "https://github.com/pedrokasak/Github-Explorer",
+};
+
+export function RepositoryList() {
+  return (
+    <section className="repository-list">
+      <h1>Lista de Repositórios</h1>
+
+      <ul>
+        <ReposityItem repository={repository} />
+        <ReposityItem repository={repository} />
+        <ReposityItem repository={repository} />
+      </ul>
+    </section>
+  );
 }

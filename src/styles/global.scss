@@ -5,6 +5,11 @@
 }
 
 body {
-    font: Arial;
+    font: 16px "Roboto", Arial, sans-serif;
     background: #333;
+    color:#fff;
+
+    a{
+        color: #d7e60a;
+    }
 }
